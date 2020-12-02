@@ -40,7 +40,7 @@ export default function Skill(){
            <td> Javascript </td>
            <td> PHP </td>
            <td> Oracle </td>
-           <td>  </td>
+           <td></td>
         </tr>
         <tr>
            <td></td>
