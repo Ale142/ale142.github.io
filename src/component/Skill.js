@@ -34,13 +34,13 @@ export default function Skill(){
            <td> HTML </td>
            <td> Java </td>
            <td> MongoDB </td>
-           <td> VS Code </td>
+           <td> IntelliJ </td>
         </tr>
           <tr>
            <td> Javascript </td>
            <td> PHP </td>
            <td> Oracle </td>
-           <td> IntelliJ </td>
+           <td>  </td>
         </tr>
         <tr>
            <td></td>
