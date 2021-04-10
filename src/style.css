@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    
+    
+}
+
+html {
+    color: var(--text-color);
+    
+}
+
+.light {
+    --color-primary: #fbfbfe;
+    --color-primary-even: #FDF0D5;
+    --color-primary-odd: #fbfbfe;
+    --title-color-odd:#EB5E55;
+    --title-color-even:#3A3335;
+    --text-color: #243133;
+}
+
+.dark {
+    --color-primary: #243133;
+    --color-primary-even: #283845 ;
+    --color-primary-odd: #202C39 ;
+    --title-color-odd: #F2D492;
+    --title-color-even: #F29559;
+    --text-color: #fbfbfe;
+}
+
+.component:nth-of-type(even) {
+    background-color: var(--color-primary-even);
+}
+.component:nth-of-type(odd) {
+    background-color: var(--color-primary-odd);
+   
+}
+.component {
+    height: 100vh;
+    
+    /* border: solid red; */
+    background-color: var(--color-primary);
+}
+
+.toggler {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    
+}
+
+/* .ant-layout {
+    height: 100vh;
+    border: solid black;
+    display: block;
+} */
+
+
+.ant-switch-checked {
+    background-color: #243133 !important;
+}
+
+.ant-switch {
+    background-color: rgb(230, 230, 59);
+}
+
+.ant-col {
+    padding: 8px;
+    margin:10px;
+}
+
+.ant-typography {
+    font-size: 18px;
+    color: var(--text-color) !important;
+}
+
+.ant-timeline-item-content {
+    color: var(--text-color) !important;
+}
+section:nth-child(odd) h1.ant-typography{
+    color: var(--title-color-odd)  !important;
+}
+section:nth-child(even) h1.ant-typography {
+    color: var(--title-color-even)  !important;
+}
+
+section:not(:first-child) {
+    margin-top: -5%;
+}
+
+.Typewriter {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: var(--title-color-odd);
+}
+
+.icon {
+    font-size: 50px !important;
+    color: var(--text-color) !important;
+}
+
+
+/*.ant-layout-sider {
+    
+    width: 0px !important;
+    flex: 0 0 0 !important;
+    
+
+}*/
