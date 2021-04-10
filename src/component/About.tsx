@@ -9,7 +9,9 @@ const { Title, Paragraph } = Typography;
 
 function About() {
     return (
+        
         <section className = "component" id = "about">
+        
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align = "middle" justify = "center" style ={{marginTop:"5%"}}>
                 <Col className = "gutter-row" span = {12} offset = {6} ><Title> About </Title> </Col>
             </Row>
@@ -32,8 +34,10 @@ function About() {
                
                 </Col>
             </Row>
+       
            
         </section>
+       
     );
 }
 

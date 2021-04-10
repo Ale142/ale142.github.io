@@ -6,6 +6,7 @@ const { Title, Paragraph} = Typography;
 
 function Skills() {
     return (
+       
         <section className = "component" id = "skills">
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align = "middle" justify = "center" style ={{marginTop:"5%"}}>
                
@@ -27,6 +28,7 @@ I am currently studying <strong>C++</strong>, <strong>Assembler</strong> for ARM
                
             </Row>
         </section>
+       
     );
 }
 

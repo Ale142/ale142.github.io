@@ -9,7 +9,9 @@ const {Title, Paragraph} = Typography;
 
 function Edu() {
     return (
+       
         <section className = "component" id = "edu">
+            
              <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align = "middle" justify = "center" style ={{marginTop:"5%"}}>
                 <Col className = "gutter-row" span = {12} offset = {6}><Title > Education </Title> </Col>
                 {/* <Col className = "gutter-row" span = {8}><Title level = {2} > Education </Title> </Col> */}
@@ -28,7 +30,9 @@ function Edu() {
             {/* <Col className = "gutter-row" span = {8}><Title level = {2} > Education </Title> </Col> */}
 
             </Row>
+           
         </section>
+        
     )
 }
 

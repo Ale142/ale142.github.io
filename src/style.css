@@ -37,7 +37,8 @@ html {
    
 }
 .component {
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     
     /* border: solid red; */
     background-color: var(--color-primary);
