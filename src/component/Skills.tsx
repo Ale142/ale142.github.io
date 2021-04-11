@@ -1,18 +1,20 @@
 import React from 'react';
 import '../style.css';
 import {Row, Col, Typography} from 'antd'
-import {Fade} from 'react-awesome-reveal';
 const { Title, Paragraph} = Typography;
-
+const Fade = require("react-reveal/Fade");
 function Skills() {
     return (
        
         <section className = "component" id = "skills">
+            <Fade>
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align = "middle" justify = "center" style ={{marginTop:"5%"}}>
                
                 <Col className = "gutter-row" span = {12} offset = {6}><Title> Skills </Title></Col>
                 
             </Row>
+            </Fade>
+            <Fade bottom delay = {500}>
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align = "middle" justify = "center" >
                 
                 <Col className = "gutter-row" span = {12} offset = {6}>
@@ -27,6 +29,7 @@ I am currently studying <strong>C++</strong>, <strong>Assembler</strong> for ARM
                 </Col>
                
             </Row>
+            </Fade>
         </section>
        
     );

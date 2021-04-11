@@ -102,6 +102,22 @@ section:not(:first-child) {
 }
 
 
+span.vertical-timeline-element-date {
+    color: white !important;
+}
+
+.vertical-timeline-element-title {
+    color: white !important;
+}
+
+.vertical-timeline-element-subtitle {
+    color: white !important;
+}
+
+footer {
+    background-color: var(--color-primary-even) !important;
+    color: var(--text-color) !important;
+}
 /*.ant-layout-sider {
     
     width: 0px !important;

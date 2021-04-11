@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Layout } from 'antd';
+import { Layout, BackTop } from 'antd';
 import Home from './component/Home'
 import About from './component/About'
 import Edu from './component/Edu'
 import Links from './component/Links'
 import Skills from './component/Skills'
-import { BooleanLiteral } from '@babel/types';
-import {debounce} from './utils/debounce';
-import Particles from "tsparticles";
+
 const {Header, Footer, Content, Sider} = Layout;
 
 
@@ -64,9 +62,11 @@ function App() {
          
           <About></About>
           <Edu></Edu>
+          <BackTop/>
           <Skills></Skills>
           <Links theme = {theme}></Links>
         </Content>
+        <Footer>Page developed with React and Typescript <br/> © 2021 Alessandro Bacci</Footer>
         
      
     

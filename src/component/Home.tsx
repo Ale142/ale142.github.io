@@ -14,8 +14,7 @@ import LinkIcon from '@material-ui/icons/Link';
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 
-import {Fade} from 'react-awesome-reveal';
-
+const Fade = require("react-reveal/Fade");
 
 function Home(props: any) {
 
@@ -60,7 +59,7 @@ function Home(props: any) {
         </Row>
        
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align = "middle" justify = "center" >
-            <Fade triggerOnce={true} direction="up">
+            <Fade bottom>
             <Col className="gutter-row" span={2}>  <EmojiEmotionsIcon className="icon" onClick = {() => document.getElementById("about")?.scrollIntoView({behavior:'smooth', block:'start'})} style = {{fontSize:40}}/> </Col>
             <Col className="gutter-row" span={2}> <SchoolIcon className="icon" onClick = {() => document.getElementById("edu")?.scrollIntoView({behavior:'smooth', block:'start'})} style = {{fontSize:40}}/> </Col>
             <Col className="gutter-row" span={2}> <LinkIcon  className="icon" onClick = {() => document.getElementById("links")?.scrollIntoView({behavior:'smooth', block:'start'})} style = {{fontSize:40}}/>  </Col>
