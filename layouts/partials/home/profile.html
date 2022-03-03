@@ -1,0 +1,42 @@
+<article
+  class="flex flex-col items-center justify-center text-center {{ if not .Site.Params.homepage.showRecent }}
+    h-full
+  {{ end }}"
+  id="particles-js"
+>
+  <header class="flex flex-col items-center mb-3">
+    {{ with .Site.Author.image }} {{ $authorImage := resources.Get . }} {{ if
+    $authorImage }} {{ $authorImage := $authorImage.Fill "288x288" }}
+    <img
+      class="transition mb-2 rounded-full w-36 h-36 bg-center ease-in-out delay-150hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-slate-900 hover:dark:shadow-white"
+      width="156"
+      height="156"
+      alt="Author"
+      src="{{ $authorImage.RelPermalink }}"
+    />
+    {{ end }} {{ end }}
+    <h1 class="text-4xl font-extrabold">
+      {{ .Site.Author.name | default .Site.Title }}
+    </h1>
+    {{ with .Site.Author.headline }}
+    <h2 class="text-xl text-neutral-600 dark:text-neutral-400">{{ . }}</h2>
+    {{ end }} {{ with .Site.Author.bio }}
+    <h3 class="mt-2 text-xl text-neutral-500 dark:text-neutral-400">{{ . }}</h3>
+    {{ end }}
+    <div class="mt-1 text-2xl">{{ partialCached "author-links.html" . }}</div>
+  </header>
+  <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
+</article>
+<section>{{ partial "recent-articles.html" . }}</section>
+
+<script>
+  const particleTheme =
+    window.localStorage.getItem("appearance") === "dark" ? "light" : "dark";
+  particlesJS.load(
+    "particles-js",
+    `json/particlesjs-config-${particleTheme}.json`,
+    function () {
+      console.log(`callback - particles.js config loaded ${particleTheme}`);
+    }
+  );
+</script>

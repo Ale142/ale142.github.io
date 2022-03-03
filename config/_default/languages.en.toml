@@ -1,0 +1,25 @@
+languageCode = "en-au"
+languageName = "English (Australia)"
+displayName = ":flag-au:"
+isoCode = "en-AU"
+weight = 1
+rtl = false
+
+title = "Home"
+#logo = "img/logo.jpg"
+description = "Personal website"
+copyright = "&copy; 2022 Alessandro Bacci"
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Alessandro Bacci"
+  image = "img/author.jpeg"
+  headline = "Master's Degree Student of Computer Engineering"
+  bio = "Life is a set of sequence and if ... then ... else constructs. Someone has forgotten the most important, the while... do, to go back."
+  links = [
+    { twitter = "https://twitter.com/alebacci9" },
+    { github = "https://github.com/Ale142"},
+    { linkedin = "https://www.linkedin.com/in/alessandro-bacci-98b0551b8/" },
+    { email = "ale.bacci142@gmail.com"}
+  ]
